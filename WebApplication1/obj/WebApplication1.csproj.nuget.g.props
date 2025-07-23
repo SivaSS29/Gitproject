@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\sonya\.nuget\packages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNuGet_CommandLine Condition=" '$(PkgNuGet_CommandLine)' == '' ">C:\Users\sonya\.nuget\packages\nuget.commandline\6.14.0</PkgNuGet_CommandLine>
+  </PropertyGroup>
 </Project>

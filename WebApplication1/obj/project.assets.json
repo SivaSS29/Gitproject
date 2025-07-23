@@ -1,11 +1,35 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "NuGet.CommandLine/6.14.0": {
+        "type": "package"
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NuGet.CommandLine/6.14.0": {
+      "sha512": "eMwTUbgsS+porfOrU/c5kFB0J/mqtGbj6eMm7GFd10D1+6JkmVpxYtDMDWdmao8KL67uqNW30bCehDo776NwZA==",
+      "type": "package",
+      "path": "nuget.commandline/6.14.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NOTICES.txt",
+        "README.md",
+        "icon.png",
+        "nuget.commandline.6.14.0.nupkg.sha512",
+        "nuget.commandline.nuspec",
+        "tools/NuGet.exe",
+        "tools/NuGet.pdb"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "NuGet.CommandLine >= 6.14.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\sonya\\.nuget\\packages\\": {}
@@ -49,6 +73,14 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "NuGet.CommandLine": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.14.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
